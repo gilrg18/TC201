@@ -40,6 +40,9 @@ public class Hangman {
 			if(t==0){
 				c=c-1;
 				System.out.println("You lost a life! you have "+c +" remaining.");
+				if(c==0){
+					JOptionPane.showMessageDialog(null, "YOU LOST!!");
+				}
 			}
 			if(guessed==b){
 				System.out.println("You won! the word was: "+d);
